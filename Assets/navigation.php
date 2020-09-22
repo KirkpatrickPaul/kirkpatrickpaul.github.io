@@ -1,14 +1,14 @@
 <?php
-echo '
-     <ul class="nav">
+echo   
+    '<ul class="nav">
          <li class="nav-item">
-              <a class="nav-link active" href="./contact.html">Contact</a>
+              <a class="nav-link active" href="../contact.html">Contact</a>
          </li>
         <li class="nav-item">
-              <a class="nav-link" href="./portfolio.html">Portfolio</a>
+              <a class="nav-link" href="../portfolio.html">Portfolio</a>
          </li>
          <li class="nav-item">
-           <a class="nav-link" href="./index.html">About Me</a>
+           <a class="nav-link" href="../index.html">About Me</a>
          </li>
-    </ul>
+    </ul>';
 ?>
