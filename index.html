@@ -11,15 +11,14 @@
     <!--bootsrap style sheet-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
-<body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+<body style = "background-color: #222222;">
+    <nav class="navbar navbar-expand-md navbar-dark bg-secondary">
         <a class="navbar-brand" href="./index.html">Paul Kirkpatrick</a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-    
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a class="nav-link active" href="./index.html">About Me<span class="sr-only">(current)</span></a>
                 </li>
@@ -33,10 +32,24 @@
     </nav>
                 
     <div class="container">
-        
+        <div class="row">
+            <div class="col-sm-3">
+                <img src="./Assets/Paul Kirkpatrick.jpg" class="img-fluid img-thumbnail" alt="Picture of Paul Kirkpatrick">
+            </div>
+            <div class="col-sm-9">
+                <p class="text-light">Paul Kirkpatrick has lived in Wichita, KS since 2001 and enjoys building computers, gaming, and ultimate frisbee. Paul has been interested in coding since high school, but has only recently formalized his education. He lives with his wonderful wife and three children and plays Bass Guitar at his church. He was born in 1985 in Newton, KS where he grew up.</p>
+            </div>
+        </div>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-5"></div>
+                <div class="col-md-2">
+                    <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="paul-kirkpatrick-ba2998160"><a class="LI-simple-link" href='https://www.linkedin.com/in/paul-kirkpatrick-ba2998160?trk=profile-badge'>My Linkedin</a></div></div>
+            </div>
+        </div>
     </div>   
-    <footer class="footer bg-dark justify-content-center">
-        <div class="container-fluid bd-dark">
+    <footer class="footer bg-secondary justify-content-center">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-12 text-center text-light active">
                     <p>Made by Paul Kirkpatrick</p>
@@ -49,7 +62,9 @@
     </script>
 	<script	src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
     </script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
     </script>
+    <!--Linkedin script-->
+    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 </body>
 </html>
