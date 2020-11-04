@@ -100,3 +100,6 @@ strong {
 #github {
   color: #fd6a02;
 }
+#github:hover {
+  color: #0067b6;
+}
