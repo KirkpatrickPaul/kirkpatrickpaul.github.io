@@ -1,0 +1,105 @@
+html,
+body {
+  height: 100%;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+body {
+  background-color: #111111;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  color: white;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  background-color: #0067b6;
+  font-family: "Oswald", Helvetica, sans-serif;
+}
+
+nav :hover {
+  text-decoration: none;
+  color: #fd6a02;
+}
+
+.nav-item :hover {
+  color: #fd6a02;
+}
+
+nav a {
+  color: white;
+  font-size: 24px;
+}
+
+nav ul .inactive {
+  color: white;
+  opacity: 75%;
+}
+
+nav ul .active {
+  color: white;
+  opacity: 100%;
+}
+
+footer {
+  background-color: #9cb700;
+  color: white;
+  font-family: "Oswald", Helvetica, sans-serif;
+  flex-shrink: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: #fd6a02;
+}
+
+img {
+  border: 4px solid #0067b6;
+  margin: 10px;
+}
+
+.first-name {
+  font-size: 150%;
+}
+
+.fa-bars {
+  color: #9cb700;
+}
+
+.container {
+  flex-wrap: wrap;
+  flex: 1 0 auto;
+}
+
+strong {
+  color: #9cb700;
+}
+
+.btn {
+  background-color: #fd6a02;
+  color: white;
+  font-weight: 500;
+}
+
+#github {
+  color: #fd6a02;
+}
+#github:hover {
+  color: #0067b6;
+}
