@@ -1,7 +1,18 @@
-import React from 'react';
+import React, { useMatch, useState, useEffect } from 'react';
 import NavItem from './NavItem';
 
-export default function Navbar({ active }) {
+export default function Navbar() {
+  const match = useMatch();
+  const [active, setActive] = useState('about');
+  useEffect(() => {
+    if (match.url.includes('/portfolio')) {
+      setActive('portfolio');
+    } else if (match.url.includes('/contact')) {
+      setActive('contact');
+    } else {
+      setActive('about');
+    }
+  }, [match]);
   return (
     <nav className='navbar navbar-expand-md'>
       <a className='nav-item active first-name' href='/'>
@@ -19,13 +30,13 @@ export default function Navbar({ active }) {
       </button>
       <div className='collapse navbar-collapse' id='navbarSupportedContent'>
         <ul className='navbar-nav ml-auto'>
-          <NavItem active={active} href='/'>
+          <NavItem active={active === 'about'} href='/'>
             ABOUT ME
           </NavItem>
-          <NavItem active={active} href='/portfolio'>
+          <NavItem active={active === 'portfolio'} href='/portfolio'>
             PORTFOLIO
           </NavItem>
-          <NavItem active={active} href='/contact'>
+          <NavItem active={active === 'contact'} href='/contact'>
             CONTACT
           </NavItem>
         </ul>
