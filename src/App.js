@@ -5,12 +5,11 @@ import Footer from './components/Footer';
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
-import './App.css';
 
 function App() {
   return (
-    <Router>
-      <div>
+    <Router style={{ margin: '0 0', padding: '0 0' }}>
+      <div style={{ margin: '0 0', padding: '0 0' }}>
         <Navbar />
         <Switch>
           <Route exact path={['/', '/about']} component={About} />

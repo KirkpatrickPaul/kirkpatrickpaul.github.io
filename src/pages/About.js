@@ -1,10 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import LinkedIn from '../components/Linkedin';
 
 export default function About() {
+  const [collapse, setCollapse] = useState({ aria: false, resume: 'collapse' });
+
+  function toggleResume() {
+    if (collapse.aria) {
+      setCollapse({ aria: false, resume: 'collapse' });
+    } else {
+      setCollapse({ aria: true, resume: 'collapse show' });
+    }
+  }
+
   return (
     <div>
-      <div className='container' id='bio-container'>
+      <div
+        className='container'
+        id='bio-container'
+        style={{ minHeight: '100%', marginBottom: '-50px' }}
+      >
         <img
           src='./Assets/Paul Kirkpatrick.jpg'
           className='img-fluid float-left'
@@ -28,18 +42,20 @@ export default function About() {
           Download my Résumé
         </a>
         <button
+          onClick={toggleResume}
           className='btn my-4'
           type='button'
           data-toggle='collapse'
           data-target='#Resume'
-          aria-expanded='false'
+          aria-expanded={collapse.aria}
           aria-controls='Resume'
         >
           See my Résumé
         </button>
       </div>
+      <div className='clearfix' style={{ minHeight: '5px' }}></div>
       <div className='container'>
-        <div className='collapse' id='Resume'>
+        <div className={collapse.resume} id='Resume'>
           <div className='card card-body'>
             <img
               className='img-fluid'
@@ -49,8 +65,9 @@ export default function About() {
           </div>
         </div>
       </div>
-      <div className='clearfix'></div>
+      <div className='clearfix' style={{ minHeight: '5px' }}></div>
       <LinkedIn />
+      <div style={{ height: '50px' }}></div>
     </div>
   );
 }
