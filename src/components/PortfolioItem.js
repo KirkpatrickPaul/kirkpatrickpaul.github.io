@@ -1,4 +1,5 @@
 import React from 'react';
+import './PortfolioItem.css';
 
 export default function PortfolioItem({ name, page, image, github, children }) {
   return (

@@ -1,4 +1,5 @@
 import React from 'react';
+import portfolioItems from '../portfolioItems';
 import PortfolioItem from '../components/PortfolioItem';
 
 export default function Portfolio() {
@@ -11,8 +12,9 @@ export default function Portfolio() {
         </a>
       </h4>
       <div class='row'>
-
-        
+        {portfolioItems.map((item) => (
+          <PortfolioItem key={item.id} {...item} />
+        ))}
       </div>
     </div>
   );
