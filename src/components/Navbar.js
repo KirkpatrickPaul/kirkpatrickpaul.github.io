@@ -1,8 +1,10 @@
-import React, { useMatch, useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useRouteMatch } from 'react-router';
 import NavItem from './NavItem';
+import './Navbar.css';
 
 export default function Navbar() {
-  const match = useMatch();
+  const match = useRouteMatch();
   const [active, setActive] = useState('about');
   useEffect(() => {
     if (match.url.includes('/portfolio')) {

@@ -1,0 +1,41 @@
+nav {
+  background-color: #0067b6;
+  font-family: 'Oswald', Helvetica, sans-serif;
+}
+
+nav :hover {
+  text-decoration: none;
+  color: #fd6a02;
+}
+
+.nav-item {
+  padding-left: 1.5rem;
+}
+
+.nav-item :hover {
+  color: #fd6a02;
+}
+
+nav a {
+  color: white;
+  font-size: 24px;
+}
+
+nav ul .inactive {
+  color: white;
+  opacity: 75%;
+}
+
+nav ul .active {
+  color: white;
+  opacity: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: #fd6a02;
+}

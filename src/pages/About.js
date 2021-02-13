@@ -11,9 +11,9 @@ export default function About() {
           alt='Picture of Paul Kirkpatrick'
         />
         <p>
-          <inline className='first-name' style='color: #9cb700'>
+          <span className='first-name' style={{ color: '#9cb700' }}>
             Paul Kirkpatrick{' '}
-          </inline>
+          </span>
           has lived in Wichita, KS since 2001 and enjoys building computers,
           gaming, and ultimate frisbee. Paul has been interested in coding since
           high school, but has only recently formalized his education. He lives

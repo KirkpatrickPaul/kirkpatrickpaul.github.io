@@ -1,0 +1,59 @@
+html,
+body {
+  min-height: 100%;
+}
+
+/* a:link {
+  text-decoration: none;
+}
+
+:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+ */
+body {
+  background-color: #111;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  color: white;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+}
+img {
+  border: 4px solid #0067b6;
+  margin: 10px;
+}
+
+.first-name {
+  font-size: 150%;
+}
+
+.fa-bars {
+  color: #9cb700;
+}
+
+.container {
+  flex-wrap: wrap;
+  flex: 1 0 auto;
+}
+
+strong {
+  color: #9cb700;
+}
+
+.btn {
+  background-color: #fd6a02;
+  color: white;
+  font-weight: 500;
+}
+
+#github {
+  color: #fd6a02;
+}
+#github:hover {
+  color: #0067b6;
+}
