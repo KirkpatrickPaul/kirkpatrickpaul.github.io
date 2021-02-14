@@ -4,9 +4,7 @@ import PortfolioItem from '../components/PortfolioItem';
 
 export default function Portfolio() {
   return (
-    <div
-      className='container'
-    >
+    <div className='container'>
       <h4 className='my-4'>
         <strong>See My Work</strong> at:{' '}
         <a id='github' href='https://github.com/KirkpatrickPaul'>
