@@ -17,7 +17,7 @@ export default function About() {
       <div
         className='container'
         id='bio-container'
-        style={{ minHeight: '100%', marginBottom: '-50px' }}
+        style={{ minHeight: '100%', marginBottom: '-40px' }}
       >
         <img
           src='./Assets/Paul Kirkpatrick.jpg'
@@ -67,7 +67,7 @@ export default function About() {
       </div>
       <div className='clearfix' style={{ minHeight: '5px' }}></div>
       <LinkedIn />
-      <div style={{ height: '50px' }}></div>
+      <div style={{ height: '40px' }}></div>
     </div>
   );
 }

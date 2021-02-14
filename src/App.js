@@ -8,8 +8,8 @@ import Contact from './pages/Contact';
 
 function App() {
   return (
-    <Router style={{ margin: '0 0', padding: '0 0' }}>
-      <div style={{ margin: '0 0', padding: '0 0' }}>
+    <Router>
+      <div style={{ minHeight: '100%' }}>
         <Navbar />
         <Switch>
           <Route exact path={['/', '/about']} component={About} />

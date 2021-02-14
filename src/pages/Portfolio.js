@@ -4,18 +4,22 @@ import PortfolioItem from '../components/PortfolioItem';
 
 export default function Portfolio() {
   return (
-    <div class='container'>
-      <h4 class='my-4'>
+    <div
+      className='container'
+      style={{ minHeight: '100%', marginBottom: '-40px' }}
+    >
+      <h4 className='my-4'>
         <strong>See My Work</strong> at:{' '}
         <a id='github' href='https://github.com/KirkpatrickPaul'>
-          <i class='fab fa-github'></i>Github
+          <i className='fab fa-github'></i>Github
         </a>
       </h4>
-      <div class='row'>
+      <div className='row'>
         {portfolioItems.map((item) => (
           <PortfolioItem key={item.id} {...item} />
         ))}
       </div>
+      <div style={{ height: '40px' }}></div>
     </div>
   );
 }
