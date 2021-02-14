@@ -1,17 +1,15 @@
-nav {
-  background-color: #0067b6;
-  font-family: 'Oswald', Helvetica, sans-serif;
-  grid-row-start: 0;
-  grid-row-end: 1;
-}
-.nav-item {
-  padding-left: 1.5rem;
-}
-
 a {
   text-decoration: none;
   color: white;
   font-size: 24px;
+}
+
+ul .inactive {
+  opacity: 75%;
+}
+
+ul .active {
+  opacity: 100%;
 }
 
 a:hover {
@@ -28,4 +26,3 @@ a:hover {
   text-decoration: none;
   color: #fd6a02;
 }
-

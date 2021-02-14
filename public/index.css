@@ -8,27 +8,16 @@ body,
   padding: 0;
 }
 body {
-  /* height: 100vh;
-  margin: 0;
-  padding: 0; */
   background-color: #111;
   font-family: 'Open Sans', Helvetica, sans-serif;
   color: white;
   font-size: 18px;
-  /* display: flex;
-  flex-direction: column; */
 }
 
 noscript {
   margin: 0;
   padding: 0;
 }
-
-/* #root {
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-} */
 
 img {
   border: 4px solid #0067b6;
@@ -65,3 +54,4 @@ strong {
 #github:hover {
   color: #0067b6;
 }
+
