@@ -1,0 +1,17 @@
+footer {
+  margin: 0 0;
+  padding: 0 0;
+  outline: 0;
+  height: 40px;
+  background-color: #9cb700;
+  color: white;
+  font-family: 'Oswald', Helvetica, sans-serif;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  text-shadow: 0 0 4px #111;
+}
+
+p {
+  margin: 0 0;
+  padding: 0 0;
+}
