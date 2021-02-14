@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Linkedin() {
+export default function Linkedin(props) {
   return (
     <div className='container mt-3'>
       <div className='row'>

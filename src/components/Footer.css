@@ -6,7 +6,8 @@ footer {
   background-color: #9cb700;
   color: white;
   font-family: 'Oswald', Helvetica, sans-serif;
-  flex-shrink: 0;
+  grid-row-start: 3;
+  grid-row-end: 4;
   text-shadow: 0 0 4px #111;
 }
 

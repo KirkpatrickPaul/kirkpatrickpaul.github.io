@@ -3,10 +3,7 @@ import LinkedIn from '../components/Linkedin';
 
 export default function Contact() {
   return (
-    <div
-      className='container'
-      style={{ alignSelf: 'stretch', height: '100%', marginBottom: '-40px' }}
-    >
+    <div className='container'>
       <h4 className='my-4'>
         <strong>Email Me:</strong>{' '}
         <a id='email' href='mailto:kirkpatrick.in.316@gmail.com'>
@@ -23,7 +20,6 @@ export default function Contact() {
         My <strong>Linkedin: </strong>
       </h4>
       <LinkedIn />
-      <div style={{ height: '40px' }}></div>
     </div>
   );
 }

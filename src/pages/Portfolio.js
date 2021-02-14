@@ -6,7 +6,6 @@ export default function Portfolio() {
   return (
     <div
       className='container'
-      style={{ minHeight: '100%', marginBottom: '-40px' }}
     >
       <h4 className='my-4'>
         <strong>See My Work</strong> at:{' '}
@@ -19,7 +18,6 @@ export default function Portfolio() {
           <PortfolioItem key={item.id} {...item} />
         ))}
       </div>
-      <div style={{ height: '40px' }}></div>
     </div>
   );
 }

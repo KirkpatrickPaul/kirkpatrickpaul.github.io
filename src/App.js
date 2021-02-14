@@ -9,7 +9,13 @@ import Contact from './pages/Contact';
 function App() {
   return (
     <Router>
-      <div style={{ minHeight: '100%' }}>
+      <div
+        style={{
+          minHeight: '100%',
+          display: 'grid',
+          gridTemplateRows: 'auto 1fr 40px'
+        }}
+      >
         <Navbar />
         <Switch>
           <Route exact path={['/', '/about']} component={About} />

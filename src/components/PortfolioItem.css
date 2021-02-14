@@ -1,3 +1,9 @@
 span {
   color: #9cb700;
 }
+
+@media (max-width: 1200px) and (min-width: 992px) {
+  p {
+    margin-left: 20px;
+  }
+}

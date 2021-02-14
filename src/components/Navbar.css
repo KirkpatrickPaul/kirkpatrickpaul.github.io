@@ -1,6 +1,8 @@
 nav {
   background-color: #0067b6;
   font-family: 'Oswald', Helvetica, sans-serif;
+  grid-row-start: 0;
+  grid-row-end: 1;
 }
 
 nav :hover {
