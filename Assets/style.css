@@ -17,7 +17,7 @@ a:hover {
 
 body {
   background-color: #111111;
-  font-family: "Open Sans", Helvetica, sans-serif;
+  font-family: 'Open Sans', Helvetica, sans-serif;
   color: white;
   font-size: 18px;
   display: flex;
@@ -26,7 +26,7 @@ body {
 
 nav {
   background-color: #0067b6;
-  font-family: "Oswald", Helvetica, sans-serif;
+  font-family: 'Oswald', Helvetica, sans-serif;
 }
 
 nav :hover {
@@ -56,7 +56,7 @@ nav ul .active {
 footer {
   background-color: #9cb700;
   color: white;
-  font-family: "Oswald", Helvetica, sans-serif;
+  font-family: 'Oswald', Helvetica, sans-serif;
   flex-shrink: 0;
 }
 
@@ -102,4 +102,29 @@ strong {
 }
 #github:hover {
   color: #0067b6;
+}
+
+#linkedin {
+  color: #fd6a02;
+  font-weight: 600;
+}
+
+#linkedin:hover {
+  color: #0067b6;
+}
+
+#linkedin .fab {
+  color: #111;
+  background-color: #fd6a02;
+  padding: 1px 3px;
+}
+
+#linkedin:hover .fab:not(:hover) {
+  color: #111;
+  background-color: #0067b6;
+}
+
+#linkedin .fab:hover {
+  color: #111;
+  background-color: #0067b6;
 }
