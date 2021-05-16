@@ -44,7 +44,7 @@ body {
 #about-nav {
   z-index: 104;
   transition: 0.45s;
-  margin-right: calc(50% - 2 * (150px + 20px));
+  margin-left: calc(50% - 2 * (150px + 20px));
 }
 
 #portfolio-nav {
@@ -150,7 +150,7 @@ body {
   height: 100%;
   max-height: 60px;
   width: 150px;
-  float: right;
+  float: left;
   display: flex;
   margin: 20px;
   justify-content: center;
@@ -162,14 +162,23 @@ body {
   border-radius: 8px;
   box-shadow: 3px 2px 12px #111;
 }
+.nav-item-top:hover {
+  background-color: #c69a58;
+  transition: 0.1s;
+}
+.nav-item-top:focus {
+  outline: none;
+  background-color: #c69a58;
+}
 
 .nav-item-scroll {
   height: 100%;
   max-height: 60px;
   width: 150px;
-  float: right;
+  float: left;
   display: flex;
-  margin: 2px -10px 0 0;
+  position: relative;
+  margin: 2px -15px 0 0;
   justify-content: center;
   align-items: center;
   background-color: #d4b483;
@@ -178,8 +187,12 @@ body {
   font-weight: 700;
   border-radius: 8px 30px 30px 8px;
   border: 1px solid #433924;
-
 }
 .nav-item-scroll:hover {
-  z-index: 105;
+  background-color: #c69a58;
+  transition: 0.1s;
+}
+.nav-item-scroll:focus {
+  background-color: #c69a58;
+  outline: none;
 }

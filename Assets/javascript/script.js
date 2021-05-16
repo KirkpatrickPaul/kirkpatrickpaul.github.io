@@ -12,7 +12,7 @@ function scrollFunc() {
   ) {
     navbar.style.height = '65px';
     navbar.style.padding = '0px';
-    aboutNav.style.marginRight = "0"
+    aboutNav.style.marginLeft = 'calc(100% - 4 * (150px - 12px))';
     aboutNav.className = 'nav-item-scroll';
     portfolioNav.className = 'nav-item-scroll';
     resumeNav.className = 'nav-item-scroll';
@@ -20,7 +20,7 @@ function scrollFunc() {
   } else {
     navbar.style.height = '120px';
     navbar.style.padding = '0';
-    aboutNav.style.marginRight = "calc(50% - 2 * (150px + 20px))"
+    aboutNav.style.marginLeft = 'calc(50% - 2 * (150px + 20px))';
     aboutNav.className = 'nav-item-top';
     portfolioNav.className = 'nav-item-top';
     resumeNav.className = 'nav-item-top';
