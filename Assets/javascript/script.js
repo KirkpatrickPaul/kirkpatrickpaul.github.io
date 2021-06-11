@@ -10,9 +10,9 @@ function scrollFunc() {
     document.documentElement.scrollTop > 5 ||
     body.scrollTop > 5
   ) {
-    navbar.style.height = '65px';
+    navbar.style.height = '55px';
     navbar.style.padding = '0px';
-    aboutNav.style.marginLeft = 'calc(100% - 4 * (150px - 12px))';
+    aboutNav.style.marginLeft = 'calc(100% - 4 * (155px - 11px))';
     aboutNav.className = 'nav-item-scroll';
     portfolioNav.className = 'nav-item-scroll';
     resumeNav.className = 'nav-item-scroll';
