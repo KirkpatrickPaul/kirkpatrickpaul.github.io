@@ -316,6 +316,12 @@ hr {
   width: 400px;
   height: 400px;
   perspective: 1000px;
+  transition: all 0.4s ease 0.8s;
+}
+
+.flip-card:hover {
+  box-shadow: none;
+  transition: all step-start;
 }
 
 .flip-card-inner {
@@ -349,7 +355,18 @@ hr {
   border-radius: 25px;
   background-color: #433924;
   color: #f5f5fb;
+  font-family: 'Oswald', sans-serif;
   transform: rotateY(180deg);
+}
+
+.flip-card-back h2 {
+  color: #d4b483;
+}
+
+.flip-card-back p {
+  padding: 10px;
+  text-align: left;
+  font-size: large;
 }
 
 .exhibit {
