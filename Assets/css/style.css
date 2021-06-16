@@ -351,6 +351,7 @@ hr {
 }
 
 .flip-card {
+  position: relative;
   margin: 20px;
   border-radius: 25px;
   box-shadow: 3px 2px 12px #111;
@@ -406,7 +407,7 @@ hr {
 }
 
 .flip-card-back p {
-  padding: 10px;
+  padding: 0px 10px;
   text-align: left;
   font-size: large;
 }
@@ -414,6 +415,41 @@ hr {
 .exhibit {
   border-radius: 25px;
 }
+
+.website,
+.repository {
+  position: absolute;
+  bottom: 20px;
+  padding: 16px 24px;
+  justify-content: center;
+  border-radius: 8px;
+  border: none;
+  background-color: #d4b483;
+  color: #433924;
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  box-shadow: 3px 2px 12px #111;
+  transition: 0.2s ease;
+}
+
+.website {
+  left: 60px;
+}
+
+.repository {
+  right: 60px;
+}
+
+.website:hover,
+.repository:hover {
+  background-color: #c69a58;
+}
+.website:active,
+.repository:active {
+  background-color: #c69a58;
+}
+
 
 .overlay {
   position: absolute;
