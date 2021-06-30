@@ -1,77 +1,369 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Paul Kirkpatrick</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
-    <!--bootsrap style sheet-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/bd85642419.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href= "./Assets/style.css">
-</head>
-<body>
-    <!-- Nav bar heavily borrowed from  Module 02 Activity 17 -->
-    <nav class="navbar navbar-expand-md">
-        <a class="nav-item active first-name" href="./">PAUL KIRKPATRICK</a>
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="fa fa-bars"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link active" href="./">ABOUT ME<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link inactive" href="./portfolio">PORTFOLIO</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link inactive" href="./contact">CONTACT</a>
-                </li>
-            </ul>
+    <title>Paul Kirkpatrick | Web Development</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans&family=Oswald:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/bd85642419.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./Assets/css/style.css" />
+  </head>
+  <body>
+    <!-- <div id="page-container">
+       <div class="parallax">
+        <div id="backgroundish"></div>
+      </div>
+      <div class="parallax" id="main"></div> 
+      <div id="content"> -->
+    <nav id="header">
+      <a id="about-nav" class="nav-item-top" href="#about">About Me</a>
+      <a id="portfolio-nav" class="nav-item-top" href="#portfolio"
+        >My Projects</a
+      >
+      <a id="resume-nav" class="nav-item-top" href="#resume-section"
+        >My Resume</a
+      >
+      <a id="contact-nav" class="nav-item-top" href="#contact">Contact Me</a>
     </nav>
-    <div class="container" id="bio-container"> 
-        <img src="./Assets/Paul Kirkpatrick.jpg" 
-        class="img-fluid float-left" 
-        alt="Picture of Paul Kirkpatrick"
+    <article id="about">
+      <div id="bio-container">
+        <p>
+          <img
+            src="./assets/images/Paul Kirkpatrick.jpg"
+            alt="Paul Kirkpatrick"
+            id="paul-pic"
+          />
+          <span class="bigger">Paul Kirkpatrick </span>is a
+          <strong>certified full stack developer</strong> from the University of
+          Kansas coding bootcamp. He enjoys writing clean code and loves seeing
+          webpages come to life in the front-end, but also loves the precision
+          and rigor of the back-end. Paul is proficient in the
+          <strong>MERN stack</strong>, willing to contribute where needed, and
+          he has a deep love of learning.
+        </p>
+        <hr />
+        <p>
+          When he isn't coding, Paul loves spending time with his wife and three
+          children. He enjoys playing Ultimate Frisbee, playing his bass guitar, and reading Science Fiction and Fantasy.
+        </p>
+        <div class="link-group">
+          <a
+            class="end-link"
+            style="margin-left: 50px"
+            href="https://github.com/KirkpatrickPaul"
+            ><i class="fab fa-github"></i>Github</a
+          >
+          <a
+            class="end-link linkedin"
+            style="margin-left: 50px"
+            href="https://www.linkedin.com/in/kirkpatrick-paul/"
+            >Linked<i class="fab fa-linkedin-in"></i
+          ></a>
+        </div>
+      </div>
+    </article>
+    <article id="portfolio">
+      <h1>Projects</h1>
+      <hr />
+      <div id="exhibit-container">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                src="./assets/images/Stonker.png"
+                alt="Stonker App"
+                class="exhibit"
+                id="stonker"
+                style="width: 400px; height: 400px"
+              />
+            </div>
+            <div class="flip-card-back">
+              <h2>Stonker</h2>
+              <p>
+                Stonker allows users to see which stock symbols are generating
+                higher than average Google search results so that they can watch
+                that stock for additional investment opportunities. It also
+                allows users to share information in a comments section for each
+                of the stock hits generated.
+              </p>
+              <p>
+                <strong style="color: #d4b483">Technology Used:</strong> React,
+                Node-cron, Passport, Google-trends-api, MySQL,
+                Sequelize,Materialize, Express, Node.js, Heroku
+              </p>
+              <a class="website" href="https://stonkerapp.herokuapp.com/"
+                >Website</a
+              >
+              <a class="repository" href="https://github.com/Henryrjung/stonker"
+                >Repository</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                src="./assets/images/Serial Search.png"
+                alt="Serial Search App"
+                class="exhibit"
+                id="serial-search"
+                style="width: 400px; height: 400px"
+              />
+            </div>
+            <div class="flip-card-back">
+              <h2>$erial.search</h2>
+              <p>
+                Serial Search provides users with a simple tool to find
+                information or entertainment related to their favorite serial
+                killers. The website is able to find all available Movies, TV,
+                and Books on any killer of the users choosing.
+              </p>
+              <p>
+                <strong style="color: #d4b483">Technology Used:</strong> JQuery,
+                Moment.js, Materialize, Wikipedia API
+              </p>
+              <a
+                class="website"
+                href="https://henryrjung.github.io/SerialSearch/"
+                >Website</a
+              >
+              <a
+                class="repository"
+                href="https://github.com/Henryrjung/SerialSearch"
+                >Repository</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                src="./assets/images/Three Fold.png"
+                alt="Three Fold Repetition Employee Directory"
+                class="exhibit"
+                id="three-fold"
+                style="width: 400px; height: 400px"
+              />
+            </div>
+            <div class="flip-card-back">
+              <h2>Three Fold Repetition</h2>
+              <p>
+                Three Fold Repetiiton Employee Directory allows a user to scroll
+                through every employee of Three Fold Repetition. Instead, the
+                user may search for a specific person, or sort employees by
+                their data. Okay, the gig is up: I made up the company and the
+                employees are all generated from the Random User Generator API.
+              </p>
+              <p>
+                <strong style="color: #d4b483">Technology Used:</strong> React,
+                Random User Generator API, Github
+              </p>
+              <a
+                class="website"
+                href="https://kirkpatrickpaul.github.io/employee_directory/"
+                >Website</a
+              >
+              <a
+                class="repository"
+                href="https://github.com/KirkpatrickPaul/employee_directory"
+                >Repository</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                src="./assets/images/See Say.png"
+                alt="See Something Say Something App"
+                class="exhibit"
+                id="see-say"
+                style="width: 400px; height: 400px"
+              />
+            </div>
+            <div class="flip-card-back">
+              <h2>See Something, Say Something</h2>
+              <p>
+                See Something Say Something allows concerned members of the
+                community to report on crimes that they've witnessed. This
+                allows others to stay informed with what is happening around
+                them.
+              </p>
+              <p>
+                <strong style="color: #d4b483">Technology Used:</strong>
+                Handlebars, MySQL, Sequelize, Chart.js, Google Maps and Google
+                Places API, Node, Express, Heroku
+              </p>
+              <a
+                class="website"
+                href="https://fierce-mountain-61777.herokuapp.com/"
+                >Website</a
+              >
+              <a
+                class="repository"
+                href="https://github.com/KirkpatrickPaul/Project02_Crime_Reporting"
+                >Repository</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                src="./assets/images/Burger.png"
+                alt="Eat Da Burger App"
+                class="exhibit"
+                id="burger"
+                style="width: 400px; height: 400px"
+              />
+            </div>
+            <div class="flip-card-back">
+              <h2>Eat Da Burger</h2>
+              <p>
+                Are you dieting? Holed up hiding from the po-po? Or just
+                hundreds of miles from the nearest burger joint? This app lets
+                you eat da burger, even if you don't have access to da burger.
+                Enter new burgers to eat, eat them, then (if you're feeling rude
+                and selfish) delete all traces of their noble sacrifice.
+              </p>
+              <p>
+                <strong style="color: #d4b483">Technology Used:</strong>
+                Handlebars, MySQL, Node, Express, Heroku
+              </p>
+              <a
+                class="website"
+                href="https://blooming-beach-22911.herokuapp.com/"
+                >Website</a
+              >
+              <a
+                class="repository"
+                href="https://github.com/KirkpatrickPaul/eat_da_burger"
+                >Repository</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                src="./assets/images/Forecaster.png"
+                alt="Weather Forecaster for the Discerning Traveler"
+                class="exhibit"
+                id="forecaster"
+                style="width: 400px; height: 400px"
+              />
+            </div>
+            <div class="flip-card-back">
+              <h2>Weather Forecaster <i>for the Discerning Traveler</i></h2>
+              <p>
+                Are you more than a simple traveler? Do you wish you could
+                discern the future weather in cities you plan to visit? Perhaps
+                you simply wish to amaze your friends with the ability to
+                predict the weather with moderate accuracy. Whatever the case,
+                this webpage is for you!
+              </p>
+              <p>
+                <strong style="color: #d4b483">Technology Used:</strong>
+                Bootstrap, Weather API, Local Storage
+              </p>
+              <a
+                class="website"
+                href="https://kirkpatrickpaul.github.io/weather_forecaster/"
+                >Website</a
+              >
+              <a
+                class="repository"
+                href="https://github.com/KirkpatrickPaul/weather_forecaster"
+                >Repository</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article id="resume-section">
+      <h1>Resume</h1>
+      <hr />
+      <div id="resume-container">
+        <img
+          src="./assets/images/Paul Kirkpatrick Resume 2021.png"
+          alt="Résumé"
+          id="resume"
+          style="width: 100%"
         />
-        <p><inline class="first-name" style="color: #9cb700; font-weight: 600">Paul Kirkpatrick </inline>is a <strong>certified full stack developer</strong> from the University of Kansas coding bootcamp that enjoys writing clean code. He's observant; he's versatile; and he's a process optimizer that has proven success in production and automation. Paul is proficient in the <strong>MERN stack</strong>, willing to contribute where needed, and he has a deep love of learning.</p>
-        <a href="./Assets/Paul Kirkpatrick Resume 2021.pdf" class="btn m-4" download="Paul Kirkpatrick Resume">Download my Résumé</a>
-        <button class="btn my-4" type="button" data-toggle="collapse" data-target="#Resume" aria-expanded="false" aria-controls="Resume">
-            See my Résumé
-          </button>
-    </div>
-    <div class="container"><div class="collapse" id="Resume">
-        <div class="card card-body">
-          <img class="img-fluid" src="./Assets/Paul Kirkpatrick Resume 2021.jpg" alt="Paul Kirkpatrick Resume">
+        <div class="overlay"></div>
+        <div class="middle">
+          <a
+            id="down-resume"
+            href="assets/images/Paul Kirkpatrick Resume 2021.pdf"
+            download="Paul Kirkpatrick Resume"
+            ><span>Download Résumé</span></a
+          >
         </div>
-  </div>
-    </div>
-      <div class="clearfix"></div>
-        <div class="container mt-3">
-            <div class="row">
-                <div class="col-4">
-                    <!-- <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="small" data-theme="dark" data-type="HORIZONTAL" data-vanity="kirkpatrick-paul" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/kirkpatrick-paul?trk=profile-badge">Paul Kirkpatrick</a></div> -->
-                </div>
-            </div>
-        </div>
-    <footer class="footer justify-content-center">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <p>Made by Paul Kirkpatrick</p>
-                </div>
-            </div>
-        </div>
+      </div>
+    </article>
+    <article id="contact">
+      <h1>Contact</h1>
+      <hr />
+      <div class="link-group">
+        <h3>
+          <a
+            class="end-link"
+            href="https://github.com/KirkpatrickPaul"
+            ><i class="fab fa-github"></i>Github</a
+          >
+        </h3>
+        <div class="break"></div>
+        <h3>
+          <a
+            class="end-link linkedin"
+            href="https://www.linkedin.com/in/kirkpatrick-paul/"
+            >Linked<i class="fab fa-linkedin-in"></i
+          ></a>
+        </h3>
+        <div class="break"></div>
+        <h3><span style="color:#f5f5fb">Emai&#108:</span>
+          <a 
+            style="margin-left:0"
+            href="mailt&#111:Paul&#032Kirkpatrick?cc=&#107&#105&#114&#107&#112&#x61;trick.in&#046;316&#0064gmai&#108&#046com"
+            class="end-link"
+            >&#160&#075&#105&#114&#107&#112&#x61;trick.in.<span>316</span>&#0064gmai&#108&#046com</a>
+        </h3>
+        <div class="break"></div>
+        <h3><span style="color:#f5f5fb">P&#104one:</span>
+          <a 
+            style="margin-left:0"
+            href="&#116el:&#51;16&#045;20&#57;&#45;2313"
+            class="end-link"
+            >&#51;16&#045;20&#57;&#45;2<span>31</span>3</a>
+        </h3>
+        
+      </div>
+    </article>
+    <footer>
+      <h3>Created By Paul Kirkpatrick</h3>
+      <h5>
+        Background Photo by
+        <a
+          href="https://unsplash.com/@unstable_affliction"
+          style="color: #6b7a24"
+          >Ivan Bandura on Unsplash</a
+        >
+      </h5>
     </footer>
-    <!--bootsrap scripts-->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
-	<script	src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
-    </script>
-    <!--Linkedin script-->
-    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script></body>
+    <script src="./assets/javascript/script.js"></script>
+  </body>
 </html>
