@@ -65,7 +65,7 @@ function smoothBackgroundScroll(imgsrc) {
         document.documentElement.clientHeight
       ),
       wh: window.innerHeight,
-      ih: backh
+      ih: Math.max(backh, 1519)
     };
     console.log(this._smoothBackgroundScroll);
   }
