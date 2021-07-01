@@ -38,18 +38,23 @@ function smoothBackgroundScroll(imgsrc) {
     if (width) {
       img.width = width;
     }
+    console.log('sbs');
     return img.height;
   }
 
   let dh, wh, ih, st, posy, backh, backw;
   if (!this._smoothBackgroundScroll) {
-    const bcksize = document.body.style.backgroundSize;
+    console.log('if 0');
+    const bcksize = Math.max(document.body.style.backgroundSize);
     const bmatch = /(\w+)\s*(\w+)/.exec(bcksize);
     if (!bmatch || bmatch.length < 3) {
+      console.log('if 1');
       backh = loadImageHeight(imgsrc);
     } else {
+      console.log('else');
       backh = parseInt(bmatch[2]);
       if (isNaN(backh)) {
+        console.log('if 2');
         backw = parseInt(bmatch[1]);
         backh = loadImageHeight(imgsrc, parseInt(backw));
       }
@@ -66,6 +71,7 @@ function smoothBackgroundScroll(imgsrc) {
       wh: window.innerHeight,
       ih: backh
     };
+    console.log(this._smoothBackgroundScroll);
   }
   dh = this._smoothBackgroundScroll.dh;
   wh = this._smoothBackgroundScroll.wh;
