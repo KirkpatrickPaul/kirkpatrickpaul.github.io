@@ -38,7 +38,6 @@ function smoothBackgroundScroll(imgsrc) {
     if (width) {
       img.width = width;
     }
-    console.log(img);
     return img.height;
   }
 
@@ -67,7 +66,6 @@ function smoothBackgroundScroll(imgsrc) {
       wh: window.innerHeight,
       ih: Math.max(backh, 1519)
     };
-    console.log(this._smoothBackgroundScroll);
   }
   dh = this._smoothBackgroundScroll.dh;
   wh = this._smoothBackgroundScroll.wh;
