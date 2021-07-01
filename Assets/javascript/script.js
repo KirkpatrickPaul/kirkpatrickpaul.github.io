@@ -38,23 +38,19 @@ function smoothBackgroundScroll(imgsrc) {
     if (width) {
       img.width = width;
     }
-    console.log('sbs');
+    console.log(img);
     return img.height;
   }
 
   let dh, wh, ih, st, posy, backh, backw;
   if (!this._smoothBackgroundScroll) {
-    console.log('if 0');
-    const bcksize = Math.max(document.body.style.backgroundSize);
+    const bcksize = document.body.style.backgroundSize;
     const bmatch = /(\w+)\s*(\w+)/.exec(bcksize);
     if (!bmatch || bmatch.length < 3) {
-      console.log('if 1');
       backh = loadImageHeight(imgsrc);
     } else {
-      console.log('else');
       backh = parseInt(bmatch[2]);
       if (isNaN(backh)) {
-        console.log('if 2');
         backw = parseInt(bmatch[1]);
         backh = loadImageHeight(imgsrc, parseInt(backw));
       }
@@ -78,8 +74,7 @@ function smoothBackgroundScroll(imgsrc) {
   ih = this._smoothBackgroundScroll.ih;
   st = Math.max(
     document.documentElement.scrollTop,
-    document.body.scrollTop,
-    body.scrollTop
+    document.body.scrollTop
   );
   posy = ((dh - ih) * st) / (dh - wh);
   document.body.style.backgroundPosition = 'center ' + posy + 'px';
@@ -88,6 +83,8 @@ preload = new Image();
 preload.src = 'assets/images/background_image_W1920.jpg';
 
 window.addEventListener('load', (_) => {
+  preload = new Image();
+preload.src = 'assets/images/background_image_W1920.jpg';
   let timer;
   window.addEventListener('scroll', function () {
     if (!timer) {
