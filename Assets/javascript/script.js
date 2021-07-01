@@ -72,10 +72,7 @@ function smoothBackgroundScroll(imgsrc) {
   dh = this._smoothBackgroundScroll.dh;
   wh = this._smoothBackgroundScroll.wh;
   ih = this._smoothBackgroundScroll.ih;
-  st = Math.max(
-    document.documentElement.scrollTop,
-    document.body.scrollTop
-  );
+  st = Math.max(document.documentElement.scrollTop, document.body.scrollTop);
   posy = ((dh - ih) * st) / (dh - wh);
   document.body.style.backgroundPosition = 'center ' + posy + 'px';
 }
@@ -84,7 +81,7 @@ preload.src = 'assets/images/background_image_W1920.jpg';
 
 window.addEventListener('load', (_) => {
   preload = new Image();
-preload.src = 'assets/images/background_image_W1920.jpg';
+  preload.src = 'assets/images/background_image_W1920.jpg';
   let timer;
   window.addEventListener('scroll', function () {
     if (!timer) {
