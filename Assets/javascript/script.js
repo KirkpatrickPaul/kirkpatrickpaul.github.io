@@ -70,7 +70,11 @@ function smoothBackgroundScroll(imgsrc) {
   dh = this._smoothBackgroundScroll.dh;
   wh = this._smoothBackgroundScroll.wh;
   ih = this._smoothBackgroundScroll.ih;
-  st = document.documentElement.scrollTop;
+  st = Math.max(
+    document.documentElement.scrollTop,
+    document.body.scrollTop,
+    body.scrollTop
+  );
   posy = ((dh - ih) * st) / (dh - wh);
   document.body.style.backgroundPosition = 'center ' + posy + 'px';
 }
