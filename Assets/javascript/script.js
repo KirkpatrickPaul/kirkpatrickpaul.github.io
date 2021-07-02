@@ -75,17 +75,17 @@ function smoothBackgroundScroll(imgsrc) {
   document.body.style.backgroundPosition = 'center ' + posy + 'px';
 }
 preload = new Image();
-preload.src = 'assets/images/background_image_W1920.jpg';
+preload.src = 'Assets/images/background_image_W1920.jpg';
 
 window.addEventListener('load', (_) => {
   preload = new Image();
-  preload.src = 'assets/images/background_image_W1920.jpg';
+  preload.src = 'Assets/images/background_image_W1920.jpg';
   let timer;
   window.addEventListener('scroll', function () {
     if (!timer) {
       timer = window.setTimeout(function () {
         scrollFunc();
-        smoothBackgroundScroll('assets/images/background_image_W1920.jpg');
+        smoothBackgroundScroll('Assets/images/background_image_W1920.jpg');
         window.clearTimeout(timer);
         timer = null;
       }, 15);
