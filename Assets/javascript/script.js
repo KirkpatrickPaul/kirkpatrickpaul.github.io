@@ -14,7 +14,7 @@ function scrollFunc() {
   ) {
     navbar.style.height = "55px";
     navbar.style.padding = "0px";
-    aboutNav.style.marginLeft = "calc(100% - 4 * (155px - 11px))";
+    aboutNav.style.marginLeft = "calc(100% - 3 * (155px - 11px))";
     aboutNav.className = "nav-item-scroll";
     portfolioNav.className = "nav-item-scroll";
     // resumeNav.className = 'nav-item-scroll';
@@ -22,7 +22,7 @@ function scrollFunc() {
   } else {
     navbar.style.height = "175px";
     navbar.style.padding = "0";
-    aboutNav.style.marginLeft = "calc(50% - 2 * (170px + 20px))";
+    aboutNav.style.marginLeft = "calc(50% - 1.5 * (170px + 20px))";
     aboutNav.className = "nav-item-top";
     portfolioNav.className = "nav-item-top";
     // resumeNav.className = 'nav-item-top';

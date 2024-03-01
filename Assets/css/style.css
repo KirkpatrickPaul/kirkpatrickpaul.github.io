@@ -107,7 +107,7 @@ hr {
 #about-nav {
   z-index: 104;
   transition: 0.45s;
-  margin-left: calc(50% - 2 * (170px + 20px));
+  margin-left: calc(50% - 1.5 * (170px + 20px));
 }
 
 #portfolio-nav {
@@ -309,6 +309,7 @@ hr {
 }
 
 .flip-card-front {
+  border-radius: 25px;
   background-color: #bbb;
   color: black;
 }
