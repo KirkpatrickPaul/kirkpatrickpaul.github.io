@@ -1,32 +1,32 @@
 // Makes navbar respond when at the top or not
 function scrollFunc() {
-  const navbar = document.getElementById('header');
+  const navbar = document.getElementById("header");
   const body = document.body;
-  const aboutNav = document.getElementById('about-nav');
-  const portfolioNav = document.getElementById('portfolio-nav');
-  const resumeNav = document.getElementById('resume-nav');
-  const contactNav = document.getElementById('contact-nav');
+  const aboutNav = document.getElementById("about-nav");
+  const portfolioNav = document.getElementById("portfolio-nav");
+  // const resumeNav = document.getElementById('resume-nav');
+  const contactNav = document.getElementById("contact-nav");
 
   if (
     document.body.scrollTop > 5 ||
     document.documentElement.scrollTop > 5 ||
     body.scrollTop > 5
   ) {
-    navbar.style.height = '55px';
-    navbar.style.padding = '0px';
-    aboutNav.style.marginLeft = 'calc(100% - 4 * (155px - 11px))';
-    aboutNav.className = 'nav-item-scroll';
-    portfolioNav.className = 'nav-item-scroll';
-    resumeNav.className = 'nav-item-scroll';
-    contactNav.className = 'nav-item-scroll';
+    navbar.style.height = "55px";
+    navbar.style.padding = "0px";
+    aboutNav.style.marginLeft = "calc(100% - 4 * (155px - 11px))";
+    aboutNav.className = "nav-item-scroll";
+    portfolioNav.className = "nav-item-scroll";
+    // resumeNav.className = 'nav-item-scroll';
+    contactNav.className = "nav-item-scroll";
   } else {
-    navbar.style.height = '175px';
-    navbar.style.padding = '0';
-    aboutNav.style.marginLeft = 'calc(50% - 2 * (170px + 20px))';
-    aboutNav.className = 'nav-item-top';
-    portfolioNav.className = 'nav-item-top';
-    resumeNav.className = 'nav-item-top';
-    contactNav.className = 'nav-item-top';
+    navbar.style.height = "175px";
+    navbar.style.padding = "0";
+    aboutNav.style.marginLeft = "calc(50% - 2 * (170px + 20px))";
+    aboutNav.className = "nav-item-top";
+    portfolioNav.className = "nav-item-top";
+    // resumeNav.className = 'nav-item-top';
+    contactNav.className = "nav-item-top";
   }
 }
 
@@ -64,7 +64,7 @@ function smoothBackgroundScroll(imgsrc) {
         document.documentElement.clientHeight
       ),
       wh: window.innerHeight,
-      ih: Math.max(backh, 1519)
+      ih: Math.max(backh, 1519),
     };
   }
   dh = this._smoothBackgroundScroll.dh;
@@ -72,20 +72,20 @@ function smoothBackgroundScroll(imgsrc) {
   ih = this._smoothBackgroundScroll.ih;
   st = Math.max(document.documentElement.scrollTop, document.body.scrollTop);
   posy = ((dh - ih) * st) / (dh - wh);
-  document.body.style.backgroundPosition = 'center ' + posy + 'px';
+  document.body.style.backgroundPosition = "center " + posy + "px";
 }
 preload = new Image();
-preload.src = 'Assets/images/background_image_W1920.jpg';
+preload.src = "Assets/images/background_image_W1920.jpg";
 
-window.addEventListener('load', (_) => {
+window.addEventListener("load", (_) => {
   preload = new Image();
-  preload.src = 'Assets/images/background_image_W1920.jpg';
+  preload.src = "Assets/images/background_image_W1920.jpg";
   let timer;
-  window.addEventListener('scroll', function () {
+  window.addEventListener("scroll", function () {
     if (!timer) {
       timer = window.setTimeout(function () {
         scrollFunc();
-        smoothBackgroundScroll('Assets/images/background_image_W1920.jpg');
+        smoothBackgroundScroll("Assets/images/background_image_W1920.jpg");
         window.clearTimeout(timer);
         timer = null;
       }, 15);
