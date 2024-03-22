@@ -88,7 +88,7 @@ window.addEventListener("load", (_) => {
         smoothBackgroundScroll("Assets/images/background_image_W1920.jpg");
         window.clearTimeout(timer);
         timer = null;
-      }, 15);
+      }, 10);
     }
   });
 });

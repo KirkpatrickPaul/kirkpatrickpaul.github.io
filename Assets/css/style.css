@@ -11,7 +11,7 @@ body {
   background-size: 1920px 2921px;
 }
 
-/* @media only screen and (min-width: 1921px) {
+@media only screen and (min-width: 1921px) {
   body {
     background-image: url(../images/background_image_W2171.jpg);
     background-attachment: fixed;
@@ -31,7 +31,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
   }
-} */
+}
 
 a {
   text-decoration: none;
