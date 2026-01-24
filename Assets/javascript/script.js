@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
     return;
   }
   
-  // Use Intersection Observer for efficient scroll detection
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -21,8 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }, {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px' // Trigger when 50px from bottom
+    threshold: 0.005,
+    rootMargin: '0px 0px -50px 0px'
   });
   
   revealElements.forEach(el => observer.observe(el));

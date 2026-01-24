@@ -145,29 +145,7 @@ main {
 }
 
 .section {
-  padding: 80px 20px;
   border-bottom: 1px solid var(--border);
-}
-
-.section:last-of-type {
-  border-bottom: none;
-}
-
-.container {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.section-title {
-  font-size: clamp(32px, 6vw, 56px);
-  font-weight: 700;
-  margin-bottom: 60px;
-  color: var(--text-primary);
-  letter-spacing: -1px;
-}
-
-/* About Section */
-#about {
   background-color: var(--bg-secondary);
   background-image: 
     repeating-linear-gradient(
@@ -186,6 +164,25 @@ main {
     );
 }
 
+.section:last-of-type {
+  border-bottom: none;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+.section-title {
+  font-size: clamp(32px, 6vw, 56px);
+  font-weight: 700;
+  margin-bottom: 60px;
+  color: var(--text-primary);
+  letter-spacing: -1px;
+}
+
+/* About Section */
 .about-content {
   display: grid;
   grid-template-columns: min(400px, 30%) 1fr;
@@ -264,25 +261,6 @@ main {
 }
 
 /* Professional Contributions Section */
-#contributions {
-  background-color: var(--bg-secondary);
-  background-image: 
-    repeating-linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.08) 0px,
-      rgba(0, 0, 0, 0.08) 1px,
-      transparent 1px,
-      transparent 2px
-    ),
-    repeating-linear-gradient(
-      90deg,
-      rgba(255, 255, 255, 0.02) 0px,
-      rgba(255, 255, 255, 0.02) 1px,
-      transparent 1px,
-      transparent 3px
-    );
-}
-
 .disclaimer {
   background-color: var(--bg-tertiary);
   border-left: 4px solid var(--accent);
@@ -399,25 +377,6 @@ main {
 }
 
 /* Contact Section */
-#contact {
-  background-color: var(--bg-secondary);
-  background-image: 
-    repeating-linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.08) 0px,
-      rgba(0, 0, 0, 0.08) 1px,
-      transparent 1px,
-      transparent 2px
-    ),
-    repeating-linear-gradient(
-      90deg,
-      rgba(255, 255, 255, 0.02) 0px,
-      rgba(255, 255, 255, 0.02) 1px,
-      transparent 1px,
-      transparent 3px
-    );
-}
-
 .contact-links {
   display: flex;
   gap: 30px;
@@ -524,7 +483,7 @@ main {
   }
 
   .section {
-    padding: 60px 20px;
+    padding: 30px 20px;
   }
 
   .section-title {
@@ -585,7 +544,7 @@ main {
   }
 
   .section {
-    padding: 40px 15px;
+    padding: 20px 15px;
   }
 
   .section-title {
