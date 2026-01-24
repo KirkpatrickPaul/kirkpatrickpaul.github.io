@@ -14,8 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Use Intersection Observer for efficient scroll detection
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
-      // Trigger reveal when element is 80% visible at the bottom
-      if (entry.intersectionRatio > 0.1) {
+      if (entry.isIntersecting) {
         entry.target.classList.add('visible');
         // Once revealed, stop observing (no need to re-hide)
         observer.unobserve(entry.target);
